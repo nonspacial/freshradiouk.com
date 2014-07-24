@@ -1,0 +1,16 @@
+#connection.php
+setup/connection.php
+
+
+#error_log
+error_log
+
+#JSON Logs
+*.json
+
+#.htaccess local
+*.htaccess
+
+#visitor-map settings
+whos-online/include-whos-online-header.php
+whos-online/include-whos-online-settings.php

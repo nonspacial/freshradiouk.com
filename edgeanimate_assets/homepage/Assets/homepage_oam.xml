@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://openajax.org/metadata" spec="1.0" id="tag:adobe.com,2012-03:edge:oam:compid:FreshRadioUk" name="homepage" version="1">
+
+  <description type="text/html"><![CDATA[Widget Exported from Adobe Edge]]></description>
+  <category name="Adobe Edge Animation"/>
+
+  <remarks>Compatible with: InDesign CC, Dreamweaver CC, Muse</remarks>
+
+  <icon src="images/icon.png" width="1750" height="900" />
+
+  <require type="other" src="homepage.html" />
+  <require type="other" src="images/p-left.svg" />
+  <require type="other" src="images/p-right.svg" />
+  <require type="other" src="images/tune.svg" />
+
+  <require type="javascript" src="homepage_edge.js" />
+  <require type="javascript" src="homepage_edgeActions.js" />
+  <require type="javascript" src="homepage_edgePreload.js" />
+  <require type="javascript" src="edge_includes/edge.4.0.0.min.js" />
+  <require type="javascript" src="edge_includes/jquery-2.0.3.min.js" />
+
+  <require type="image" src="images/html5chrome.png" />
+  <require type="image" src="images/html5firefox.png" />
+  <require type="image" src="images/html5IE.png" />
+  <require type="image" src="images/icon.png" />
+  <require type="image" src="images/Poster.png" />
+  <require type="image" src="images/Poster2.png" />
+
+  <require type="folder" src="edge_includes" />
+  <require type="folder" src="images" />
+
+
+  <content><![CDATA[
+    <div class="FreshRadioUk"></div>
+  ]]></content>
+   
+  <properties name="Properties">
+    <property name="default-width" defaultValue="1750" hidden="true"/>
+    <property name="default-height" defaultValue="900" hidden="true"/>
+    <property name="resizable" defaultValue="true" hidden="true"/>				
+		<property name="centering" defaultValue="none" hidden="true"/>				
+		<property name="scaling" defaultValue="width" hidden="true"/>
+    <property name="html-page" defaultValue="homepage.html" hidden="true"/>
+  </properties>
+
+</widget>

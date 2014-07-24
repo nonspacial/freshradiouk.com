@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: rgba(10,10,10,1.00);
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container .text-muted {
+  margin: 10px 0;
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+#btn-debug {
+}
+#console-debug{
+	background-color:#B3B3B3;
+	position:absolute;
+	top:7%;
+	left:69.35%;
+	width: 30%;
+	height: 60%;
+	overflow-y: auto;
+	}
+#console-debug pre {
+	}
+.panel {
+	padding:1%;
+	height: 600px;
+	border: thin rgba(0,0,0,1.00) solid;
+	margin-bottom: 5%;
+	overflow:hidden;
+
+}
+
+#editor {
+	padding:1%;
+	background-color:#F8F8F8;
+	height:500px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	
+	}
+ 
+#showtimeMaster{
+	}

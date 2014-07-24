@@ -1,0 +1,695 @@
+@charset "utf-8";
+/* CSS Document */
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	background-color:rgba(47,47,47,1.00);
+	position: relative;
+	min-height: 100%;
+	}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 120px;
+	background-color:rgba(47,47,47,1.00);
+	overflow-x:hidden;
+	overflow-y:auto;
+	height:1600px;
+	}
+#footer {
+	z-index:3;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 120px;
+	background-color: rgba(10,10,10,1.00);
+	}
+h1 {
+	color:rgba(228,228,228,1.00);
+	}
+label {
+	color:rgba(228,228,228,1.00);
+	}
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+nav {
+	z-index:3;}
+.container .text-muted {
+	margin: 10px 0;
+	}
+#footer > .container {
+	padding-right: 15px;
+	padding-left: 15px;
+	}
+#btn-debug {
+	position:absolute;
+	left:10px;
+	top:80px;
+}
+#console-debug{
+	background-color:#B3B3B3;
+	position:absolute;
+	top:7%;
+	left:69.35%;
+	width: 30%;
+	height: 60%;
+	overflow-y: auto;
+	}
+#console-debug pre {
+	}
+
+.edgeLoad-FreshRadioUk { visibility:hidden; }
+.edgeLoad-FreshRadioUk-mobile { visibility:hidden; }
+.edgeLoad-FreshRadioUk-tablet { visibility:hidden; }
+.row { clear:both;}	
+/* Mobile & Tablet styles */
+#spinning h4{
+	color:rgba(184,184,184,1.00);
+	}
+.removePaddingLeft{padding-left:0%;}
+.removePaddingRight{padding-right:0%;}
+#audioPanel{
+	margin-bottom:1%;
+	}
+.home {
+	margin:1%;
+	padding:1%;
+	border:1px solid #000000;
+	}
+#u106
+{
+	z-index: 2;
+	max-width:100%;
+	width: 320px;
+	max-height:100%;
+	height: 480px;
+	background-color: transparent;
+	position: relative;
+}
+
+#U108_animation
+{
+	max-width:100%;
+	width: 900px;
+	max-height:100%;
+	height: 1024px;
+	border: none;
+}
+.slide{
+	height:50px;
+	margin-bottom:50px;
+	}
+.upArrow {
+	height:20px;
+	background-image:url(../images/Up%20Arrow.svg);
+	background-size:1%;
+	background-repeat:no-repeat;
+	background-position:center;}
+.downArrow {	
+	height:20px;
+	background-image:url(../images/Down%20Arrow.svg);
+	background-size:1%;
+	background-repeat:no-repeat;
+	background-position:center;}
+
+#fill {
+	height:50%;
+	width:100%;
+	}
+.sideDivs{
+	text-align:center;
+	border-right:1px solid rgba(48,48,48,1.00);
+	min-width:20px;
+	overflow:auto;
+}
+#chatInner{
+	max-height:100%;
+	height:700px;
+	}
+#content{
+	max-height:100%;
+	height:750px;
+	}
+#row1 {
+	padding-right:0%;
+	border-right:1px solid rgba(99,99,99,1.00);
+	width:40%;
+	margin-top:0%;
+	margin-left:auto;
+	margin-top:auto;
+	margin-right:0;
+	float:left;
+	height:190px;
+	overflow-y:hidden;
+	}
+#row2 {
+	position:absolute;
+	margin-left:40%;
+	width:60%;
+	margin-top:0%;
+	float: right;
+	height: 200px;
+	}
+#rowSideBar{
+	height:200px;
+	margin:auto;
+	width:100%;
+	  }
+#sub1{
+	margin-top:.5% !important;
+	margin-left:0% !important;
+	margin-right:0 !important;
+	padding-right:0% !important;
+	width:100%;
+	height:97px;
+	}
+#sub2 {
+	margin:0px;
+	margin-top:0%;
+	height:90px;
+	}
+#setups{
+	padding-right:1% !important;
+	margin:0;
+	float:left;
+	overflow:hidden;
+	width:33.33%;
+	height:100%;
+	}
+.sideDivs h4{
+	font-size:13px;
+	color:rgba(228,228,228,1.00);
+	}
+.nowPlayingContainer{
+	width:98%;
+	height:99%;
+	background-color:rgba(255,255,255,1.00);
+	border:1px solid #000000;
+	padding:1%;
+	margin-top:1%;
+	}
+.nowPlaying h3{
+	margin-top:auto;
+	font-size:18px;
+	color:rgba(0,0,0,1.00);
+	}
+.nowPlaying h4{
+	margin-top:1px;
+	font-size:13px;
+	color:rgba(0,0,0,1.00);
+	}
+.nowPlaying h5{
+	font-size:12px;
+	color:rgba(58,58,58,1.00);
+	}
+.you {
+	height:100%;
+	width:100%;
+	padding:1%;
+	color:rgba(89,255,0,1.00);
+	background-color:rgba(27,4,223,1.00);
+	}
+.you p {
+	font-size:9px;	
+	}
+.loggedInUsers {
+	height:100%;
+	width:100%;
+	color:rgba(228,228,228,1.00);
+	background-color:rgba(89,63,119,1.00);
+	}
+.onlineGuests {
+	height:100%;
+	width:100%;
+	color:rgba(228,228,228,1.00);
+	background-color:rgba(81,5,170,1.00);
+	float:right;
+	}
+.streamLinks{
+	height:100%;
+	width:100%;
+	margin-top: 2%;
+	background-color: rgba(170,101,5,1.00);
+	font-size:10px;
+
+}
+#formRow {
+	margin-top:0%;
+	}
+
+#online{
+	margin-bottom:1%;
+	display:inline-flex;
+}
+#chatlogs{margin:0% 0% 1% 0%;}
+.uName{
+	font-weight:bold;
+	font-size:15px;
+	font-family:Verdana, Geneva, sans-serif;
+	list-style:none;
+	padding-right:10px;
+	}
+.uNameLogin{
+	font-weight:bold;
+	font-size:15px;
+	font-family:Verdana, Geneva, sans-serif;
+	list-style:none;
+	padding-right:10px;
+	}
+.uNameDJ{
+	font-weight:bold;
+	font-size:15px;
+	font-family:Verdana, Geneva, sans-serif;
+	list-style:none;
+	padding-right:10px;
+	}
+.uNameAdmin{
+	font-weight:bold;
+	font-size:15px;
+	font-family:Verdana, Geneva, sans-serif;
+	list-style:none;
+	padding-right:10px;
+	}
+.date{
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-style:italic;
+	color:#0243CC;
+	}
+.msg{
+	color:#000000;
+	font-size:15px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}
+.button{
+	text-align:center;
+	background-color:#00F;
+	border-width:2px;
+	border-style:solid;
+	border-color:#000;
+	color:#FFF;
+	padding-left:10px;
+	padding-right:10px;
+	text-decoration:none;
+	}
+.panelMain {
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	}
+.panelFbook {
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	}
+.panelTwitter {
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	}
+#visit {
+	margin-bottom:2%;
+	}
+.panelVisit {
+	max-height: 300px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	}
+
+#sidebar {
+	display:inline-flex;
+	width: 98%;
+	margin-left: 1%;
+	padding-bottom:1%;
+	padding-left:1%;
+	height:200px;
+	overflow:hidden;
+	padding-right:0px !important;
+	}
+#sidebarFbook {
+	display:inline-flex;
+	width: 98%;
+	margin-left: 1%;
+	padding-bottom:1%;
+	padding-left:1%;
+	height:200px;
+	overflow:hidden;
+	padding-right:0px !important;
+	}
+#sidebarTwitter {
+	display:inline-flex;
+	width: 98%;
+	margin-left: 1%;
+	padding-bottom:1%;
+	padding-left:1%;
+	height:200px;
+	overflow:hidden;
+	padding-right:0px !important;
+	}
+#sidebarVisit {
+	display:inline-flex;
+	width: 98%;
+	margin-left: 1%;
+	padding-bottom:1%;
+	padding-left:1%;
+	height:200px;
+	overflow:hidden;
+	padding-right:0px !important;
+	}
+.audioPlayer {
+	}
+#streamButtons {
+	float:left;
+	}
+.emoticon {
+	max-height:5%;
+	max-width:5%;
+	}
+#emoteButtons {
+	padding-left:1.5%;
+	position:relative;
+	}
+.emoticonButton {
+	width:4%;
+	}
+.emoticonButton:hover {
+	cursor:pointer;
+	}
+.schedule {
+	border:1px solid #C5C5C5;
+	max-height: 450px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	}
+.fb-follow {
+	margin-bottom:0 !important;}
+.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { width: 100% !important;	height:490px !important;
+}
+.map{
+	width:100% !important;
+	}
+.fb-comments, .fb-comments span, .fb-comments span iframe[style] { width: 100% !important; }
+.map{
+	width:100% !important;
+	}
+#stream128 img {
+	width:5%;}
+.stream64 img{
+	width:20%;
+	padding-left:1px !important;
+	}
+iframe {
+	width:1200px !important;
+	}
+.homeEdge{
+	clear:both;
+	position:relative;
+	align-content:center;
+	overflow:hidden;
+	}
+@media screen and (min-width:484px){
+.nowPlayingContainer{
+	height:98%;
+	}
+.alternateStreams{
+	height:95%;
+	}
+.stream64 img{
+	width:11%;}
+}
+
+@media screen and (min-width:768px){
+body{margin-bottom:70px;
+	height:1250px;
+	}
+#footer{
+	height:70px;
+	}
+.slide{
+	height:10px;
+	margin-bottom:10px;
+	}
+
+#u106
+{
+	width:768px;
+	height:1024px;
+}
+
+#U108_animation
+{
+	width:768px;
+	height:1024px;
+}
+
+.nowPlayingContainer{
+	height:98.5%;
+	margin-bottom:1%;
+	}
+#rowSideBar{
+	height:200px;
+}
+#alternateStreams{
+	height:93%;}
+.nowPlaying h3{
+	font-size:20px;
+	}
+.nowPlaying h4{
+	font-size:26px;
+	}
+.nowPlaying h5{
+	font-size:12px;
+	}
+.you p {
+	font-size:16px;	
+	}
+.sideDivs h4{
+	margin-bottom:1%;
+	}
+.stream64 img{
+	width:10%;
+	padding-left:1px !important;
+	}
+
+}
+	
+/* Desktop styles */
+
+@media screen and (min-width:992px){
+#u106
+{
+	width: 2000px;
+	height: 600px;
+}
+
+#U108_animation
+{
+	width: 1500px;
+	height: 600px;
+}
+.upArrow {
+	height:5px;
+	}
+.downArrow {	
+	height:5px;
+}
+.panelMain {
+	max-height: 450px;
+	height: 450px;
+	margin-bottom:10px !important;
+	}
+.panelFbook {
+	max-height: 460px;
+	height: 460px;
+	margin-bottom:10px !important;
+	}
+.panelTwitter {
+	max-height: 460px;
+	height: 460px;
+	margin:10px !important;
+	}
+.panelVisit {
+	max-height: 460px;
+	height: 460px;
+	margin-bottom:10px !important;
+	}
+.schedule {
+	max-height: 600px;
+	height: 600px;
+	}
+.sideDivs{
+	margin-right:0%;
+	margin-top:2%;
+	margin-right:0%;
+	max-height:25%;
+	border-right:none;
+	border-bottom:1px solid rgba(48,48,48,1.00);
+	font-size:1em;
+	height:100%;
+	}
+.nowPlayingContainer{
+	height:98%;
+	width:auto;
+	margin-bottom:1%;
+	}
+.nowPlaying{
+	padding:.5% 5%;
+	}
+.row {
+	margin-left: 0px; 
+	margin-right: 0px;
+	}
+#rowSideBar {
+	padding:auto;
+	height:100%;
+	}
+#row1{
+	border-right:none;
+	margin-top:auto !important;
+	margin-left:auto !important;
+	width:100%;
+	padding:0% 1%;
+	height:50%;
+	}
+#row2{
+	position:relative;
+	margin-top:auto !important;
+	margin-left:auto !important;
+	width:100%;
+	margin-left:5%;
+	font-size:.8em;
+	padding:0% 1%;
+	height:230px;
+}
+.nowPlaying h3{
+	font-size:17px;
+	}
+.nowPlaying h4{
+	font-size:14px;
+	}
+.nowPlaying h5{
+	font-size:12px;
+	}
+
+#sub1{
+	margin-top:auto !important;
+	margin-left:auto !important;
+	padding-top:0% !important;
+	padding-left:0% !important;
+	padding-right:0% !important;
+	padding-bottom:0% !important;
+	width:100%;
+	height:115px;
+	}
+#setups{
+	height:100%;
+	margin:auto;
+	padding:0.1% !important;
+	}
+.setupsLast{
+	padding-right:0px !important;
+	}
+.you p {
+	font-size:9px;	
+	}
+
+#sub2{
+	margin-left:auto !important;
+	margin-top:auto !important;
+	padding:0% 0%;
+	height:115px;
+	}
+.you {
+	min-height:115px;
+	}
+.you h4 {
+	font-size:16px;
+	}
+.loggedInUsers {
+	font-size:14px;
+	min-height:115px;
+	}
+.loggedInUsers h4 {
+	font-size:16px;
+	}
+.onlineGuests {
+	font-size:14px;
+	min-height:115px;
+	}
+.onlineGuests h4 {
+	font-size:16px;
+	}
+.streamLinks{
+	margin-bottom:0 !important;
+	min-height:100px;
+	}
+#online {
+	margin-left:3%;
+	display:block;
+	}
+#chatlogs{
+	padding:0.5%;	
+	margin:0% 1% 1% 1%;}
+#sidebar {
+	margin:auto;
+	height: 500px;
+	width: 16.6666%;
+	padding: 0%;
+	display: block;
+	float: right;
+	top:-460px;
+	left:-33px;
+	}
+#sidebarFbook {
+	margin:auto;
+	height: 500px;
+	width: 31%;
+	padding: 0%;
+	display: block;
+	float: right;
+	}
+#sidebarVisit {
+	margin:auto;
+	margin-top:11%;
+	height: 500px;
+	width: 31%;
+	padding: 0%;
+	display: block;
+	float: right;
+	}
+#sidebarTwitter {
+	margin:auto;
+	height: 500px;
+	width: 31%;
+	padding: 0%;
+	display: block;
+	float: right;
+	}
+.stream64 img{
+	width:15%;
+	}
+
+#footer{ height:40px;}
+body{
+	height:auto;
+ 	margin-bottom:40px;}
+}
+
+
+@media screen and (min-width:1280px){
+.nowPlaying h3{
+	font-size:18px;
+	}
+.nowPlaying h4{
+	font-size:14px;
+	}
+.nowPlaying h5{
+	font-size:12px;
+	}
+.you p {
+	font-size:12px;
+	}
+#sidebar{
+	left:-3%;
+	}
+}

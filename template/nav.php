@@ -1,0 +1,16 @@
+<?php //WHERE menu='main' 
+function mainNav ($dbc, $path) {?><nav class="navbar navbar-inverse" role="navigation"><div class="container-fluid"><div class="container"><!-- Brand and toggle get grouped for better mobile display --><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><img src="images/FreshLogoSquare.gif" width="50" height="50" alt="FreshRadioUk.com"/></div><!-- Collect the nav links, forms, and other content for toggling --><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><?php $q= "SELECT * FROM content ORDER BY id";$r=mysqli_query ($dbc, $q);if ($r) {//begin IF?><?php while ($nav = mysqli_fetch_assoc($r)) {// begin WHILE 
+if ($nav['menu']=='main') {?><li id="<?php echo $nav['slug'] ?>"<?php selected($path['call_parts'][0], $nav['slug'], ' class="active"') ?>><a href="<?php echo $nav['slug'];?>"><?php echo $nav['label']; ?></a><?php	if ($nav['hasSub']==1) {/*begin SUBMENU*/ echo subnav ($dbc, $nav['page']);}//end SUBMENU?></li><?php ;}//end IF $nav['menu']?><?php ;}//end WHILE?><?php ;}//end IF?></ul><ul class="nav navbar-nav navbar-right"><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Social</b><b class="caret"></b></a><ul class="dropdown-menu" role="menu" style="width:20%; z-index:3; padding:1%;"><li style="margin:auto;"><a><div class="fb-follow" data-href="https://www.facebook.com/FreshRadiouk" data-colorscheme="dark" data-layout="button" data-show-faces="true"></div></a></li><li style="margin:auto;"><a><div class="fb-like" data-href="http://www.freshradiouk.com" data-width="50" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></a></li><li style="margin:auto;"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.freshradiouk.com" data-hashtags="FreshRadioUk.com">Tweet</a></li><li><a href="https://twitter.com/freshradiouk" class="twitter-follow-button" data-show-count="false">Follow @freshradiouk</a></li></ul></li><?php if (isset($_SESSION['username'])) {if ($_SESSION['status'] == 567) {?><li><a href="admin/index.php">Admin</a></li><?php } ?><li><a href="Profile">Profile</a></li><li><a href="setup/logout.php">Logout</a></li><?php }else{ ?><li><a id="login" href="Login">Login</a></li><li><a id="register" href="Register">Register</a></li><?php } ?></ul></div><!-- /.navbar-collapse --></div><!-- /.container --></div><!-- /.container-fluid --></nav><?php 	}; //end function
+				
+function subNav ($dbc, $id) {
+	$q= "SELECT * FROM content WHERE menu='sub' AND page='$id' ORDER BY id";
+	$r=mysqli_query ($dbc, $q);	
+				if ($r) {//begin IF?>
+			<ul>
+            	<?php	while ($navSub = mysqli_fetch_assoc($r)) {//begin WHILE?>
+				<li id="<?php echo $navSub['title'];?>" class="subButton" title="<?php echo $navSub['title'];?>"><a href="<?php echo $navSub['slug'];?>"><?php echo $navSub['label'];?></a></li>
+				<?php ;}//end WHILE
+?>				</ul>
+					<?php ;}//end IF
+				};//end FUNCTION
+?>

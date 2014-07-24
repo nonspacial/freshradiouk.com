@@ -22,6 +22,9 @@
 				//  so we can allow for a little better readability over the wire: |`^
 				replace(/%(?:7C|60|5E)/g, unescape);
 			}
+		function updatePlaying () {
+			$.ajax({url:"setup/nowPlaying.php", type: 'GET', success: function(data){$('#nowPlaying').html(data);}})
+			}
 			
 			function submitChat() {
 				if (form1.uName.value === '' || form1.msg.value === '') {alert('ALL Fields ARE MANDATORY!'); return;	}
@@ -29,10 +32,9 @@
 				
 				form1.uName.style.border = 'none'; $('#imageLoad').show(); var uName = form1.uName.value; var uNameEscaped = encode(uName); var msg = form1.msg.value; var msgEscaped = encode(msg);
 				$.ajax({ url: "chatbox/insert.php?uName=" + uNameEscaped + "&msg=" + msgEscaped, success: function (data) { $('#chatlogs').html(data); $('#imageLoad').hide(); $('#message').val('');}});
-				
-				$.ajax({ url: "chatbox/chatJSON.php", type: "GET" });				
-					var elem = document.getElementById('chatlogs'); elem.scrollTop = elem.scrollHeight;
-					}
+		$.ajax({ url: "chatbox/chatJSON.php", type: "GET" });				
+		var elem = document.getElementById('chatlogs'); elem.scrollTop = elem.scrollHeight;
+		}
 		function updateUsers() {
 			$.ajax({ url: "chatbox/updateUser.php", type: "GET" }); 
 			}
@@ -53,7 +55,7 @@
 				
 				var audio = $('#audioPlayer'); $('#reload').on("click", function (e) {audio.attr("src", "http://96.31.83.94:8061/;");audio[0].pause();audio[0].load(); /*suspends and restores all audio element*/audio[0].play();});
 
-				setInterval(function () { $('#nowplaying').load('setup/nowPlaying.php'); }, 1500000);
+				setInterval(function () {updatePlaying();}, 900000);
 
 				$('#console-debug').hide();
 				$('#btn-debug').on("click", function () { $('#console-debug').toggle(); });

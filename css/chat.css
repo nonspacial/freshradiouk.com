@@ -344,15 +344,15 @@ nav {
 	float:left;
 	}
 .emoticon {
-	max-height:5%;
-	max-width:5%;
+	max-height:8%;
+	max-width:8%;
 	}
 #emoteButtons {
 	padding-left:1.5%;
 	position:relative;
 	}
 .emoticonButton {
-	width:4%;
+	width:8%;
 	}
 .emoticonButton:hover {
 	cursor:pointer;
@@ -403,6 +403,13 @@ iframe {
 @media screen and (min-width:768px){
 body{margin-bottom:80px;}
 #footer{height:80px;}
+.emoticon {
+	max-height:4%;
+	max-width:4%;
+	}
+.emoticonButton {
+	width:4%;
+	}
 .slide{
 	height:10px;
 	margin-bottom:10px;

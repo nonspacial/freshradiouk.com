@@ -19,7 +19,9 @@
 				//  so we can allow for a little better readability over the wire: |`^
 				replace(/%(?:7C|60|5E)/g, unescape);
 			}
-			function updatePlaying () {$.ajax({url:"setup/nowPlaying.php", type: 'GET', success: function(data){$('#nowPlaying').html(data);}})}
+			function updatePlaying() {$.ajax({url:"setup/nowPlaying.php", type: 'GET', success: function(data){$('#nowPlaying').html(data);}});}
+			function active() {$.ajax({url:"chatbox/active.php", type: 'GET', success: function(data){$('.loggedInUsers p').html(data);}});}
+			function guests() {$.ajax({url:"chatbox/guests.php", type: 'GET', success: function(data){$('.onlineGuests p').html(data);}});}
 			function submitChat() {if (form1.uName.value === '' || form1.msg.value === '') {alert('ALL Fields ARE MANDATORY!'); return;}
 			form1.uName.style.border = 'none'; $('#imageLoad').show(); var uName = form1.uName.value; var uNameEscaped = encode(uName); var msg = form1.msg.value; var msgEscaped = encode(msg);$('.you p').html(form1.uName.value);$.ajax({ url: "chatbox/insert.php?uName=" + uNameEscaped + "&msg=" + msgEscaped, success: function (data) { $('#chatlogs').html(data); $('#imageLoad').hide(); $('#message').val('');}});$.ajax({ url: "chatbox/chatJSON.php", type: "GET" });var elem = document.getElementById('chatlogs'); elem.scrollTop = elem.scrollHeight;}
 			function updateUsers() {$.ajax({ url: "chatbox/updateUser.php", type: "GET" });}
@@ -31,7 +33,8 @@
 				$(window).unload(function(){  /*jQuery version of window.onunload*/ if(!$('body').data('linkClicked')){/*Check global variable*/$.ajax({ url: 'chatbox/unload.php', async: false /*this locks the browser, but it may be needed to make sure the ajax call runs before the tab is closed*/ }); }});
 				$('#accordion').accordion({ collapsible: true, heightStyle: "fill" });
 				var audio = $('#audioPlayer'); $('#reload').on("click", function (e) {audio.attr("src", "http://96.31.83.94:8061/;");audio[0].pause();audio[0].load(); /*suspends and restores all audio element*/audio[0].play();});
-				setInterval(function () {updatePlaying();}, 900000);$('#console-debug').hide();$('#btn-debug').on("click", function () { $('#console-debug').toggle(); });$(function () {$.ajaxSetup({cache: false});});
+				setInterval(function () {updatePlaying();}, 900000);setInterval(function () {guests();}, 10000);setInterval(function () {active();}, 10000);
+				$('#console-debug').hide();$('#btn-debug').on("click", function () { $('#console-debug').toggle(); });$(function () {$.ajaxSetup({cache: false});});
 				if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {/*MOBILE Device to Console*/device = "mobile";console.log('You ARE using a mobile device!');}else{/* DESKTOP*/device = "desktop";console.log('You ARE NOT using a mobile device!');}
 			});
 			/*//home page scaling*/var viewportwidth;var viewportheight;/*//Standards compliant browsers (mozilla/netscape/opera/IE7)*/if (typeof window.innerWidth !== 'undefined') { viewportwidth = window.innerWidth, viewportheight = window.innerHeight; }/*// IE6*/else if (typeof document.documentElement !== 'undefined' && typeof document.documentElement.clientWidth !== 'undefined' && document.documentElement.clientWidth !== 0) { viewportwidth = document.documentElement.clientWidth, viewportheight = document.documentElement.clientHeight; }/*//Older IE*/else { viewportwidth = document.getElementsByTagName('body')[0].clientWidth, viewportheight = document.getElementsByTagName('body')[0].clientHeight; }if (viewportwidth <= viewportheight) {$('#formRow').before($('#chatInner'));} else {$('#formRow').after($('#chatInner'));}

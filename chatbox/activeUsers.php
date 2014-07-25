@@ -3,6 +3,7 @@
 	
     $q="SELECT * FROM activeusers ORDER BY time_visited ASC";
     $r=mysqli_query($dbc, $q);
+	
     if ($r) {
         while ($activeUsers=mysqli_fetch_assoc($r)) {
 			

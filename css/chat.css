@@ -42,6 +42,11 @@ nav {
 	padding-right: 15px;
 	padding-left: 15px;
 	}
+.panel{
+	margin:auto;
+	overflow-x:hidden;
+	overflow-y:auto;}
+
 #btn-debug {
 	position:absolute;
 	left:10px;
@@ -124,8 +129,9 @@ nav {
 	overflow:auto;
 }
 #chatInner{
-	max-height:100%;
-	height:700px;
+	height:auto;
+	max-height:900px;
+	clear:both;
 	}
 #content{
 	max-height:100%;
@@ -318,7 +324,6 @@ nav {
 
 #sidebar {
 	display:inline-flex;
-	width: 98%;
 	margin-left: 1%;
 	padding-bottom:1%;
 	padding-left:1%;
@@ -385,13 +390,7 @@ nav {
 	margin-bottom:0 !important;}
 .fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { width: 100% !important;	height:490px !important;
 }
-.map{
-	width:100% !important;
-	}
 .fb-comments, .fb-comments span, .fb-comments span iframe[style] { width: 100% !important; }
-.map{
-	width:100% !important;
-	}
 #stream128 img {
 	width:5%;}
 .stream64 img{
@@ -450,6 +449,7 @@ body{margin-bottom:70px;
 	height:200px;
 }
 #alternateStreams{
+	padding-top:8%;
 	height:93%;}
 .nowPlaying h3{
 	font-size:20px;
@@ -476,6 +476,19 @@ body{margin-bottom:70px;
 /* Desktop styles */
 
 @media screen and (min-width:992px){
+#bigGif {
+	height:280px;
+	top:-350px !important;}
+#panelSocial{
+	padding-top:0px !important;
+	max-height:1000px;
+	height:900px;
+	border:none;}
+#socialTabs{
+	background:none;
+	height:650px;}
+#chatlogs{
+	background:#FFFFFF;}
 #u106
 {
 	width: 2000px;
@@ -493,19 +506,27 @@ body{margin-bottom:70px;
 .downArrow {	
 	height:5px;
 }
+.panel {
+	margin-right:.3%;
+	}
 .panelMain {
-	max-height: 450px;
-	height: 450px;
+	max-height: 700px;
+	height: 700px;
+	margin-bottom:10px !important;
+	}
+.panelChat {
+	max-height: 580px;
+	height: 580px;
 	margin-bottom:10px !important;
 	}
 .panelFbook {
-	max-height: 460px;
-	height: 460px;
+	max-height: 580px;
+	height: 580px;
 	margin-bottom:10px !important;
 	}
 .panelTwitter {
-	max-height: 460px;
-	height: 460px;
+	max-height: 580px;
+	height: 580px;
 	margin:10px !important;
 	}
 .panelVisit {
@@ -513,6 +534,18 @@ body{margin-bottom:70px;
 	height: 460px;
 	margin-bottom:10px !important;
 	}
+.scoped {
+	max-height: 550px;
+	height: 550px;
+	}
+#facebookOutside {
+	margin-top:1%;
+	max-height:250px;
+	}
+.fb-follow {margin-top:0 !important;}
+.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { width: 100% !important;}
+.fb-comments, .fb-comments span, .fb-comments span iframe[style] {width: 100% !important; }
+
 .schedule {
 	max-height: 600px;
 	height: 600px;
@@ -559,7 +592,7 @@ body{margin-bottom:70px;
 	margin-left:5%;
 	font-size:.8em;
 	padding:0% 1%;
-	height:230px;
+	height:248px;
 }
 .nowPlaying h3{
 	font-size:17px;
@@ -600,30 +633,38 @@ body{margin-bottom:70px;
 	height:115px;
 	}
 .you {
-	min-height:115px;
+	align-content:center;
+	padding-top:25%;
+	min-height:174px;
 	}
 .you h4 {
 	font-size:16px;
 	}
 .loggedInUsers {
+	padding-top:25%;
+	align-content:center;
 	font-size:14px;
-	min-height:115px;
+	min-height:174px;
 	}
 .loggedInUsers h4 {
 	font-size:16px;
 	}
 .onlineGuests {
+	align-content:center;
+	padding-top:25%;
 	font-size:14px;
-	min-height:115px;
+	min-height:174px;
 	}
 .onlineGuests h4 {
 	font-size:16px;
 	}
 .streamLinks{
 	margin-bottom:0 !important;
-	min-height:100px;
+	min-height:174px;
 	}
 #online {
+	height:500px;
+	max-height:500px;
 	margin-left:3%;
 	display:block;
 	}
@@ -631,14 +672,11 @@ body{margin-bottom:70px;
 	padding:0.5%;	
 	margin:0% 1% 1% 1%;}
 #sidebar {
-	margin:auto;
+	margin-left:.05%;
 	height: 500px;
-	width: 16.6666%;
 	padding: 0%;
 	display: block;
-	float: right;
-	top:-460px;
-	left:-33px;
+	float: left;
 	}
 #sidebarFbook {
 	margin:auto;
@@ -668,7 +706,9 @@ body{margin-bottom:70px;
 .stream64 img{
 	width:15%;
 	}
-
+#row3{
+	marging-top:-50%;
+	}
 #footer{ height:40px;}
 body{
 	height:auto;
@@ -690,6 +730,5 @@ body{
 	font-size:12px;
 	}
 #sidebar{
-	left:-3%;
 	}
 }

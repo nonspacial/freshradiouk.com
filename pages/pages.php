@@ -46,11 +46,25 @@
 						<?php } ?>
                     <?php 
 					if ($page['slug'] === 'Shoutbox') {
-						include ("shoutbox.php");
+						include ("shoutbox.php");?>
+						<script>
+							$(function() {$( "#socialTabs" ).tabs();});
+							setTimeout (function () { var elem = document.getElementById('chatlogs'); elem.scrollTop = elem.scrollHeight; }, 4000);
+							setTimeout(function () {insertUser();}, 6000);
+							$('#message').focus();
+							$('.emoticonButton').on('click', function (e) { var smiley = $(this).attr('alt'); var message = $('#message').val(); $('#message').val(message + ' ' + smiley + '').focus();});
+							$('.slide').on("click", function () {
+								$('.toSlide').slideToggle(1000);
+								$(this).find(".upArrow, .downArrow").toggle();
+							});
+							setTimeout(function () { $('#chatlogs').load('chatbox/logs.php'); var elem = document.getElementById('chatlogs'); }, 2000);
+							setTimeout(function () { $('#online').load('chatbox/activeUsers.php'); }, 2000);
+							setInterval(function () { $('#chatlogs').load('chatbox/logs.php'); var elem = document.getElementById('chatlogs'); }, 30000);
+							setInterval(function () { $('#online').load('chatbox/activeUsers.php'); }, 10000);
+							$("#message").keydown(function (e) { if (e.keyCode === 13) { if (e.shiftKey) { $(this).val($(this).val() + "\n"); } else { e.preventDefault(); submitChat(); } } });
+						</script>
+					<?php
 					}elseif ($page['slug'] === 'visitor-map') {?>
-					
-                    <!-- <iframe src="whos-online-maps.php" height="500px"></iframe>-->
-					
 					<?php include ("visitors.php");
 					}elseif ($page['slug'] === 'Fbook') {
 						include ("facebook.php");

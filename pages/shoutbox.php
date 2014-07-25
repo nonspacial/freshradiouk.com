@@ -2,14 +2,14 @@
                     <div id="pageLoad" style="text-align:center"><h4 style="color:#CDCDCD">The Site is still in the Beta testing stage so please bare with us. New Guest List button added.</h4></div>
                             
                     <div id="imageLoad" style="display:none;"><img src="images/1-0.gif" /></div>
-                    <div id="online" class="col-md-2 panel panel-default panelMain"></div>
-                    <div>
-                        <div id="chatlogs" class="col-md-7 panel panel-default panelMain">LOADING CHATLOG PLEASE WAIT... <img src="images/1-0.gif" /></div>
-                            <form name="form1" class="col-md-8 col-md-offset-2">
+                    <div id="online" class="col-md-2 panel panel-default panelMain"><div id="onlineUsers"></div></div>
+                    <div class="col-md-7">
+                        <div id="chatlogs" class="col-md-12 panel panel-default panelMain" style="margin:0;">LOADING CHATLOG PLEASE WAIT... <img src="images/1-0.gif" /></div>
+                            <form name="form1" class="col-md-12">
                                 <div class="form-group">
                                     <div class="col-md-2"><label for="nameLabel">Enter Your Name:</label></div>
                                     <div class="col-md-4"><input type="text" name="uName" class="form-control" value="<?php echo $_SESSION['user']; ?>"></div>
-                                    <a id="guestList" class="btn btn-default" href="Shoutbox">Add me to the Guest List</a><br>
+                                    <div class="col-md-4"><a id="guestList" class="btn btn-default" href="Shoutbox">Add me to the Guest List</a></div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8"><label for="messageLabel">Your Message:</label></div>
@@ -40,7 +40,7 @@
                                 </div>
                             </form>
                     </div>
-                    <div id="sidebar" class="panel panel-default panelMain col-md-3">
+                    <div id="sidebar" class="panel panel-default panelMain col-md-2">
                         <div id="rowSideBar" class="row">
                             <div id="row1" class="row">
                                 <div id="nowPlayingContainer" class="nowPlayingContainer "><?php showtime($dbc, $dateTime); ?></div>
@@ -77,6 +77,7 @@
                             </div>
                         </div>
                     </div>
+                    </div>
 <script>
 	setTimeout (function () { var elem = document.getElementById('chatlogs'); elem.scrollTop = elem.scrollHeight; }, 4000);
 	setTimeout(function () {insertUser();}, 6000);
@@ -87,8 +88,8 @@
 		$(this).find(".upArrow, .downArrow").toggle();
 	});
 	setTimeout(function () { $('#chatlogs').load('chatbox/logs.php'); var elem = document.getElementById('chatlogs'); }, 2000);
-	setTimeout(function () { $('#online').load('chatbox/activeUsers.php'); }, 2000);
+	setTimeout(function () { $('#onlineUsers').load('chatbox/activeUsers.php'); }, 2000);
 	setInterval(function () { $('#chatlogs').load('chatbox/logs.php'); var elem = document.getElementById('chatlogs'); }, 30000);
-	setInterval(function () { $('#online').load('chatbox/activeUsers.php'); }, 10000);
+	setInterval(function () { $('#onlineUsers').load('chatbox/activeUsers.php'); }, 10000);
 	$("#message").keydown(function (e) { if (e.keyCode === 13) { if (e.shiftKey) { $(this).val($(this).val() + "\n"); } else { e.preventDefault(); submitChat(); } } });
 </script>

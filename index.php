@@ -7,7 +7,7 @@
 	</head>
     <body>
 		<?php  echo mainNav($dbc, $path);?>
-    	<div id="page" class="container-fluid"></div>
+    	<div id="page" class="container-fluid">
 			<div id="fb-root" class="fb_reset"></div>
             <?php 
 				include ("pages/pages.php");

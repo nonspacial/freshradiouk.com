@@ -96,27 +96,6 @@ nav {
 	height: 1024px;
 	border: none;
 }
-.slide{
-	height:50px;
-	margin-bottom:50px;
-	}
-.upArrow {
-	height:20px;
-	background-image:url(../images/Up%20Arrow.svg);
-	background-size:1%;
-	background-repeat:no-repeat;
-	background-position:center;}
-.downArrow {	
-	height:20px;
-	background-image:url(../images/Down%20Arrow.svg);
-	background-size:1%;
-	background-repeat:no-repeat;
-	background-position:center;}
-
-#fill {
-	height:50%;
-	width:100%;
-	}
 .sideDivs{
 	text-align:center;
 	border-right:1px solid rgba(48,48,48,1.00);
@@ -313,7 +292,6 @@ nav {
 	overflow-y: auto;
 	overflow-x: hidden;
 	}
-
 #sidebar {
 	padding-bottom:1%;
 	padding-left:1%;
@@ -367,13 +345,7 @@ nav {
 	margin-bottom:0 !important;}
 .fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { width: 100% !important;	height:490px !important;
 }
-.map{
-	width:100% !important;
-	}
 .fb-comments, .fb-comments span, .fb-comments span iframe[style] { width: 100% !important; }
-.map{
-	width:100% !important;
-	}
 #stream128 img {
 	width:5%;}
 .stream64 img{
@@ -410,11 +382,6 @@ body{margin-bottom:80px;}
 .emoticonButton {
 	width:4%;
 	}
-.slide{
-	height:10px;
-	margin-bottom:10px;
-	}
-
 #u106
 {
 	width:768px;
@@ -473,12 +440,6 @@ body{margin-bottom:80px;}
 	height: 600px;
 }
 #guestList{margin-top:0%;}
-.upArrow {
-	height:5px;
-	}
-.downArrow {	
-	height:5px;
-}
 .panelMain {
 	max-height: 450px;
 	height: 450px;

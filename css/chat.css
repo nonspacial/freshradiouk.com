@@ -317,44 +317,28 @@ nav {
 	}
 
 #sidebar {
-	display:inline-flex;
-	width: 98%;
-	margin-left: 1%;
 	padding-bottom:1%;
 	padding-left:1%;
 	height:200px;
 	overflow:hidden;
-	padding-right:0px !important;
 	}
 #sidebarFbook {
-	display:inline-flex;
-	width: 98%;
-	margin-left: 1%;
 	padding-bottom:1%;
 	padding-left:1%;
 	height:200px;
 	overflow:hidden;
-	padding-right:0px !important;
 	}
 #sidebarTwitter {
-	display:inline-flex;
-	width: 98%;
-	margin-left: 1%;
 	padding-bottom:1%;
 	padding-left:1%;
 	height:200px;
 	overflow:hidden;
-	padding-right:0px !important;
 	}
 #sidebarVisit {
-	display:inline-flex;
-	width: 98%;
-	margin-left: 1%;
 	padding-bottom:1%;
 	padding-left:1%;
 	height:200px;
 	overflow:hidden;
-	padding-right:0px !important;
 	}
 .audioPlayer {
 	}
@@ -419,12 +403,8 @@ iframe {
 }
 
 @media screen and (min-width:768px){
-body{margin-bottom:70px;
-	height:1250px;
-	}
-#footer{
-	height:70px;
-	}
+body{margin-bottom:70px;}
+#footer{height:70px;}
 .slide{
 	height:10px;
 	margin-bottom:10px;
@@ -631,39 +611,20 @@ body{margin-bottom:70px;
 	padding:0.5%;	
 	margin:0% 1% 1% 1%;}
 #sidebar {
-	margin:auto;
-	height: 500px;
-	width: 16.6666%;
 	padding: 0%;
-	display: block;
-	float: right;
-	top:-460px;
-	left:-33px;
+	height: 500px;
 	}
 #sidebarFbook {
-	margin:auto;
-	height: 500px;
-	width: 31%;
 	padding: 0%;
-	display: block;
-	float: right;
+	height: 500px;
 	}
 #sidebarVisit {
-	margin:auto;
-	margin-top:11%;
-	height: 500px;
-	width: 31%;
 	padding: 0%;
-	display: block;
-	float: right;
+	height: 500px;
 	}
 #sidebarTwitter {
-	margin:auto;
-	height: 500px;
-	width: 31%;
 	padding: 0%;
-	display: block;
-	float: right;
+	height: 500px;
 	}
 .stream64 img{
 	width:15%;
@@ -688,8 +649,5 @@ body{
 	}
 .you p {
 	font-size:12px;
-	}
-#sidebar{
-	left:-3%;
 	}
 }

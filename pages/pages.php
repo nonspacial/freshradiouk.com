@@ -13,7 +13,6 @@
 
                      <?php }
 					 if ($_SESSION['status']>=2) {?>
-						<div id="fb-root" class=" fb_reset"></div>
                         <div class="row">
                             <div id="audioPanel" class="col-md-12">
                                 <div class="col-md-4 col-md-offset-4">

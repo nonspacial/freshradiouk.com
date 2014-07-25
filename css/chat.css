@@ -238,8 +238,7 @@ nav {
 	}
 
 #online{
-	margin-bottom:1%;
-	display:inline-flex;
+	margin:3%;
 }
 #chatlogs{margin:0% 0% 1% 0%;}
 .uName{
@@ -603,8 +602,11 @@ body{margin-bottom:80px;}
 	min-height:100px;
 	}
 #online {
+	margin-top:0%;
 	margin-left:3%;
-	display:block;
+	margin-right:0%;
+	margin-bottom:0%;
+
 	}
 #chatlogs{
 	padding:0.5%;	

@@ -80,7 +80,6 @@
                     </div>
 <script>
 	setTimeout (function () { var elem = document.getElementById('chatlogs'); elem.scrollTop = elem.scrollHeight; }, 4000);
-	setTimeout(function () {insertUser();}, 6000);
 	$('#message').focus();
 	$('.emoticonButton').on('click', function (e) { var smiley = $(this).attr('alt'); var message = $('#message').val(); $('#message').val(message + ' ' + smiley + '').focus();});
 	$('.slide').on("click", function () {

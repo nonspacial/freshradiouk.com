@@ -126,9 +126,9 @@ nav {
 #chatInner{
 	min-height:100%;
 	}
+#guestList{margin-top:2%;}
 #content{
-	max-height:100%;
-	height:750px;
+	min-height:100%;
 	}
 #row1 {
 	padding-right:0%;
@@ -465,6 +465,7 @@ body{margin-bottom:80px;}
 	width: 1500px;
 	height: 600px;
 }
+#guestList{margin-top:0%;}
 .upArrow {
 	height:5px;
 	}
@@ -606,7 +607,6 @@ body{margin-bottom:80px;}
 	margin-left:3%;
 	margin-right:0%;
 	margin-bottom:0%;
-
 	}
 #chatlogs{
 	padding:0.5%;	

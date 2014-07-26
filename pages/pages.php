@@ -68,7 +68,8 @@
 						$content = $dbc->query("SELECT * FROM content WHERE slug = '$page[slug]'");
 						$content = mysqli_fetch_assoc($content);
 						echo $content['body'];
-							}
+						?><script type="text/javascript">$('#accordion').accordion({ collapsible: true, heightStyle: "fill" });</script>
+					<?php }
            if ($page['slug']==='home' || $page['slug']==='Schedule') {?>
               </div>
            </div>

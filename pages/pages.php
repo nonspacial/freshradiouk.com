@@ -41,7 +41,7 @@
 			
 			if ($page['slug']==='home' || $page['slug']==='Schedule') {?>
             <div class="container" style="clear:both;">
-              <div id="mainContentBlock" class="row">
+              <div id="mainContentBlock" class="row" style="height:100%;" >
 						<?php } ?>
                     <?php 
 					if ($page['slug'] === 'Shoutbox') {

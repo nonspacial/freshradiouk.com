@@ -11,26 +11,26 @@
 ';
 				}
 					 if ($_SESSION['status']>=2) {?>
-                        <div class="row">
-                            <div id="audioPanel" class="col-md-12">
-                                <div class="col-md-4 col-md-offset-4">
+                        <div class="row"  style="margin-bottom:3px;">
+                            <div id="audioPanel" class="container" style="margin-bottom:1px;">
+                                <div class="col-md-2 col-md-offset-4">
                                     <audio id="audioPlayer" class="audioPlayer" src="<?php echo $stream; ?>" controls>
                                         Your browser does not support the audio element. Please use the links provided in the side panel or try a different browser. the latest IE, Firefox and Chrome should all work perfectly.
                                     </audio>
-                                        <button id="reload" class="btn btn-primary btn-xs">Reload</button>
                                 </div>
                             </div>
+                            <div class="container" style=""><div class="col-md-4 col-md-offset-4"><button id="reload" class="btn btn-primary btn-xs">Reload</button></div></div>
                         </div>
 					<?php }else{ ?>
-                        <div class="row">
-                            <div id="audioPanel" class="col-md-12">
-                                <div class="col-md-4 col-md-offset-4">
+                        <div class="row"  style="margin-bottom:3px;">
+                            <div id="audioPanel" class="container" style="margin-bottom:1px;">
+                                <div class="col-md-2 col-md-offset-4">
                                     <audio id="audioPlayer" class="audioPlayer" src="<?php echo $stream; ?>" controls autoplay>
                                         Your browser does not support the audio element. Please use the links provided in the side panel or try a different browser. the latest IE, Firefox and Chrome should all work perfectly.
                                     </audio>
-                                        <button id="reload" class="btn btn-primary btn-xs">Reload</button>
                                 </div>
                             </div>
+                            <div class="container" style=""><div class="col-md-4 col-md-offset-4"><button id="reload" class="btn btn-primary btn-xs">Reload</button></div></div>
                         </div>
 		           	<?php }
 			if ($page['slug']==='home' || $page['slug']==='Schedule') {?>
@@ -61,7 +61,7 @@
 						$content = $dbc->query("SELECT * FROM content WHERE slug = '$page[slug]'");
 						$content = mysqli_fetch_assoc($content);
 						echo $content['body'];?>
-						<script type="text/javascript">$('#accordion').accordion({ collapsible: true, heightStyle: "fill" });</script>
+				<script type="text/javascript">$('#accordion').accordion({ collapsible: true, heightStyle: "fill" });</script>
 					<?php }
            if ($page['slug']==='home' || $page['slug']==='Schedule') {?>
               </div>

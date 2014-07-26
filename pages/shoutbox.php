@@ -7,9 +7,9 @@
                         <div id="chatlogs" class="col-md-12 panel panel-default panelMain" style="margin:0;">LOADING CHATLOG PLEASE WAIT... <img src="images/1-0.gif" /></div>
                             <form name="form1" class="col-md-12">
                                 <div class="form-group">
-                                    <div class="col-md-2"><label for="nameLabel">Enter Your Name:</label></div>
+                                    <div class="col-md-3"><label for="nameLabel">Enter Your Name:</label></div>
                                     <div class="col-md-4"><input type="text" name="uName" class="form-control" value="<?php echo $_SESSION['user']; ?>"></div>
-                                    <div class="col-md-4"><a id="guestList" class="btn btn-default" href="Shoutbox">Add me to the Guest List</a></div>
+                                    <div class="col-md-4"><a id="guestList" class="btn btn-primary" href="Shoutbox">Add me to the Guest List</a></div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-8"><label for="messageLabel">Your Message:</label></div>

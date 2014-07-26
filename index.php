@@ -15,4 +15,5 @@
 		</div>
         <?php include('template/footer.php');?>
     </body>
+	<?php if ($debug==1) {?> <div id="debug"> <?php	include ("functions/debug.php");?> </div><?php }?>
 </html>

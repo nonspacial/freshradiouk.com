@@ -20,3 +20,7 @@
         
         <!-- My Styles -->        
         <link rel="stylesheet" type="text/css" href="css/chat.css">
+        <?php if ($path['call'] === 'Profile' && $_SESSION['status']>=2) { ?>
+        <!-- Redactor -->   
+        <link rel="stylesheet" type="text/css" href="admin/Css/redactor.css">    
+        <?php } ?>

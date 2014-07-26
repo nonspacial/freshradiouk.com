@@ -47,9 +47,6 @@
 					if ($page['slug'] === 'Shoutbox') {
 						include ("shoutbox.php");
 					}elseif ($page['slug'] === 'visitor-map') {?>
-					
-                    <!-- <iframe src="whos-online-maps.php" height="500px"></iframe>-->
-					
 					<?php include ("visitors.php");
 					}elseif ($page['slug'] === 'Fbook') {
 						include ("facebook.php");
@@ -65,12 +62,13 @@
 						include ("register.php");
 					}elseif ($path['call_parts'][0] === 'Success') {
 						include ("register_success.php");
+					}elseif ($path['call_parts'][0] === 'Djs') {
+						include ("djs.php");
 					}else{
-                            $content = $dbc->query("SELECT * FROM content WHERE slug = '$page[slug]'");
-                            $content = mysqli_fetch_assoc($content);
-                            echo '<<div><h5 style="color:#CDCDCD">The Site is still in the Beta testing stage so please bare with us. If you are experiencing any issues then please close your browser and delete all data on mobile devices and all history and cache on desktops. Then come back and do not use the browser to refresh the page use the internal site links provided. Once you have the most up-to-date code this will put you in the shoutbox correctly Using F5 or otherwise refreshing the browser will not put you in the Database. All old logins are for wordpress and we are not using wordpress anymore so your old logins will not work, recreate a new one as there is no-way for us to know your passwords. If the HTML5 player isn\'t working then you either need to as above or if you get the message that your browser doesn\'t support it then guess what.</h5></div>';
-						    echo $content['body'];
-                            	}
+						$content = $dbc->query("SELECT * FROM content WHERE slug = '$page[slug]'");
+						$content = mysqli_fetch_assoc($content);
+						echo $content['body'];
+							}
            if ($page['slug']==='home' || $page['slug']==='Schedule') {?>
               </div>
            </div>
@@ -78,9 +76,7 @@
  		
 		 if ($debug == 1) { ?> 
         <div id="debugButton"><button id="btn-debug" class="btn btn-default navbar-btn"><i class="fa fa-bug"></i></button></div>
-            <?php	} ?>
-		<?php if ($debug==1) {?> <div id="debug"> <?php	include ("functions/debug.php");?> </div><?php }
-		
+            <?php	} 
 			if( strstr($_SERVER['HTTP_USER_AGENT'],'Android') ||
 				strstr($_SERVER['HTTP_USER_AGENT'],'webOS') ||
 				strstr($_SERVER['HTTP_USER_AGENT'],'iPhone') ||

@@ -36,19 +36,6 @@
 			function insertUser(){var uName = form1.uName.value;uNameEscaped = encode(uName);$.ajax({ url: "chatbox/insertUser.php?uName=" + uNameEscaped, type: "GET" });}
 		$('#console-debug').hide();	
 		$(document).ready(function (e) {
-				<?php if ($path['call'] === 'Profile') { ?>$(".redactor").redactor({
-					convertDivs: false,
-					formattingTags: ["div", "p", "blockquote", "pre", "h1", "h2", "h3", "h4", "h5", "h6"],
-					imageGetJson: "json/data.json",
-					imageUpload: "setup/image_upload.php",
-					fileUpload: "setup/file_upload.php",
-					minHeight: 300,
-					autoresize: false,
-					cleanFontTag: false,
-					focus: true,
-					plugins: ['fontsize', 'fontfamily', 'fontcolor', 'fullscreen']
-				});
-				<?php } ?>
 				<?php if (isset($_SESSION['username'])) {?>form1.uName.readOnly=true;<?php }?>
 				function wo_map_console(url) {window.open(url,"wo_map_console","height=650,width=800,toolbar=no,statusbar=no,scrollbars=yes").focus();}
 				setInterval(function(){updateUsers();}, 179985);$('a').click(function(){ /*Run for all links*/ $('body').data('linkClicked', true); /*Set global variable*/ });

@@ -144,3 +144,20 @@ if (isset($_POST['id'])!='') {
 <?php }?>
                         </div>
                     </div>
+				<?php if ($path['call'] === 'Profile') { ?>
+				<script type="text/javascript">
+					$(".redactor").redactor({
+						convertDivs: false,
+						formattingTags: ["div", "p", "blockquote", "pre", "h1", "h2", "h3", "h4", "h5", "h6"],
+						imageGetJson: "json/data.json",
+						imageUpload: "setup/image_upload.php",
+						fileUpload: "setup/file_upload.php",
+						minHeight: 300,
+						autoresize: false,
+						cleanFontTag: false,
+						focus: true,
+						plugins: ['fontsize', 'fontfamily', 'fontcolor', 'fullscreen']
+					});
+				</script>
+				<?php } ?>
+

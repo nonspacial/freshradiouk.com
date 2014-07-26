@@ -9,9 +9,7 @@
 				#Desktop Paste Here	
 				$edgeHome='<iframe id="U108_animation" src="edgeanimate_assets/homepage/Assets/homepage.html" scrolling="no" class="animationContainer an_invi"></iframe>				
 ';
-					?>  
-
-                     <?php }
+				}
 					 if ($_SESSION['status']>=2) {?>
                         <div class="row">
                             <div id="audioPanel" class="col-md-12">
@@ -23,9 +21,7 @@
                                 </div>
                             </div>
                         </div>
-					<?php
-						 }else{
-					?>
+					<?php }else{ ?>
                         <div class="row">
                             <div id="audioPanel" class="col-md-12">
                                 <div class="col-md-4 col-md-offset-4">
@@ -37,17 +33,14 @@
                             </div>
                         </div>
 		           	<?php }
-			
-			
 			if ($page['slug']==='home' || $page['slug']==='Schedule') {?>
             <div class="container" style="clear:both;">
               <div id="mainContentBlock" class="row" style="height:100%;" >
-						<?php } ?>
-                    <?php 
+						<?php } 
 					if ($page['slug'] === 'Shoutbox') {
 						include ("shoutbox.php");
-					}elseif ($page['slug'] === 'visitor-map') {?>
-					<?php include ("visitors.php");
+					}elseif ($page['slug'] === 'visitor-map') {
+						include ("visitors.php");
 					}elseif ($page['slug'] === 'Fbook') {
 						include ("facebook.php");
 					}elseif ($page['slug'] === 'Twitter') {
@@ -67,15 +60,15 @@
 					}else{
 						$content = $dbc->query("SELECT * FROM content WHERE slug = '$page[slug]'");
 						$content = mysqli_fetch_assoc($content);
-						echo $content['body'];
-						?><script type="text/javascript">$('#accordion').accordion({ collapsible: true, heightStyle: "fill" });</script>
+						echo $content['body'];?>
+						<script type="text/javascript">$('#accordion').accordion({ collapsible: true, heightStyle: "fill" });</script>
 					<?php }
            if ($page['slug']==='home' || $page['slug']==='Schedule') {?>
               </div>
            </div>
         <?php }
  		
-		 if ($debug == 1) { ?> 
+		 if ($debug === 1) { ?> 
         <div id="debugButton"><button id="btn-debug" class="btn btn-default navbar-btn"><i class="fa fa-bug"></i></button></div>
             <?php	} 
 			if( strstr($_SERVER['HTTP_USER_AGENT'],'Android') ||

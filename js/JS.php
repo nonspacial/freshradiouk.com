@@ -40,7 +40,6 @@
 				function wo_map_console(url) {window.open(url,"wo_map_console","height=650,width=800,toolbar=no,statusbar=no,scrollbars=yes").focus();}
 				setInterval(function(){updateUsers();}, 179985);$('a').click(function(){ /*Run for all links*/ $('body').data('linkClicked', true); /*Set global variable*/ });
 				$(window).unload(function(){  /*jQuery version of window.onunload*/ if(!$('body').data('linkClicked')){/*Check global variable*/$.ajax({ url: 'chatbox/unload.php', async: false /*this locks the browser, but it may be needed to make sure the ajax call runs before the tab is closed*/ }); }});
-				var audio = $('#audioPlayer'); $('#reload').on("click", function (e) {audio.attr("src", "http://96.31.83.94:8061/;");audio[0].pause();audio[0].load(); /*suspends and restores all audio element*/audio[0].play();});
 				setInterval(function () {updatePlaying();}, 900000);setInterval(function () {guests();}, 30000);setInterval(function () {active();}, 30000);
 				$('#btn-debug').on("click", function () { $('#console-debug').toggle(); });$(function () {$.ajaxSetup({cache: false});});
 				if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {/*MOBILE Device to Console*/device = "mobile";console.log('You ARE using a mobile device!');}else{/* DESKTOP*/device = "desktop";console.log('You ARE NOT using a mobile device!');}

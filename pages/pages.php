@@ -79,3 +79,4 @@
 		<?php }else{
 			#Do NOthing paste @ top 
                       } ?>
+<script type="text/javascript">var audio = $('#audioPlayer'); $('#reload').on("click", function (e) {audio.attr("src", "http://96.31.83.94:8061/;");audio[0].pause();audio[0].load(); /*suspends and restores all audio element*/audio[0].play();});</script>

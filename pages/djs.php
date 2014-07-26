@@ -19,9 +19,9 @@ include("setup/connection.php");
        	<?php	$opened=$dbc->query("SELECT * FROM dj_profiles WHERE id=$_GET[id]");
 				$list=mysqli_fetch_assoc($opened);
 			 	if ($list) { ?>
-                        <div id="bio_<?php echo $list['id'];?>" class="col-md-12 bio" style="height:700px;color:#DCDCDC;"><?php echo html_entity_decode($list['bio'])?></div>					
+                        <div id="bio_<?php echo $list['id'];?>" class="col-md-12 bio" style="height:700px;color:#DCDCDC;"><h1><?php echo $list['dj_name'];?></h1><?php echo html_entity_decode($list['bio'])?></div>					
 		<?php		}else{?>
-                        <div id="bioMain" class="col-md-12 bio" style="height:700px;color:#DCDCDC;"><h1>SOME WELCOME TO PROFILES TEXT MF!!!!!!!!!!!</h1></div>					
+                        <div id="bioMain" class="col-md-12 bio" style="height:700px;color:#DCDCDC;"><h1>Our Dj's</h1></div>					
 		<?php 		}?>
     </div>
 </div>

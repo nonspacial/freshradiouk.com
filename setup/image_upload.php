@@ -5,7 +5,7 @@
  
  
 // files storage folder
-$dir = '../images/';
+$dir = '../images/profiles/';
  
 $_FILES['file']['type'] = strtolower($_FILES['file']['type']);
  
@@ -24,7 +24,7 @@ if ($_FILES['file']['type'] == 'image/png'
 
     // displaying file    
 	$array = array(
-		'filelink' => 'images/'.$filename
+		'filelink' => 'images/profiles/'.$filename
 	);
 	
 	echo stripslashes(json_encode($array));   

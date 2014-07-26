@@ -137,6 +137,7 @@ if (isset($_POST['id'])!='') {
                                         <input type="hidden" name="submitted" value="2">
                                         <input type="hidden" name="user" value="<?php echo $_SESSION['username'] ?>">
                                         <input type="hidden" name="id" value="<?php echo $userStatus['id']; ?>">
+                                   <a href="Djs" style="color:#428bca">Check your new DJ Profile Here</a>
                                     </form>
                                    </div>
                                 </div>

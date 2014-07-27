@@ -88,7 +88,7 @@
 	});
 	setTimeout(function () { $('#chatlogs').load('chatbox/logs.php'); var elem = document.getElementById('chatlogs'); }, 2000);
 	setTimeout(function () { $('#onlineUsers').load('chatbox/activeUsers.php'); }, 2000);
-	setInterval(function () { $('#chatlogs').load('chatbox/logs.php'); var elem = document.getElementById('chatlogs'); }, 30000);
-	setInterval(function () { $('#onlineUsers').load('chatbox/activeUsers.php'); }, 10000);
+	setInterval(function () { $('#chatlogs').load('chatbox/logs.php'); var elem = document.getElementById('chatlogs'); }, 10000);
+	setInterval(function () { $('#onlineUsers').load('chatbox/activeUsers.php'); }, 6000);
 	$("#message").keydown(function (e) { if (e.keyCode === 13) { if (e.shiftKey) { $(this).val($(this).val() + "\n"); } else { e.preventDefault(); submitChat(); } } });
 </script>

@@ -21,8 +21,7 @@ if (mysqli_num_rows($r)) {
 	$_SESSION['username']=$res['username'];
 	$_SESSION['status'] = $res['status'];
 	$_SESSION['user']=$res['username'];
-	$_SESSION['fixed']=2;
-	header("location:../Shoutbox?fixed=2");
+	header("location:../Shoutbox");
 }else {
 	header("location:../Login");
 	echo "No User found. Please re-enter the correct details!";

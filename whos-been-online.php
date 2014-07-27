@@ -7,7 +7,7 @@ ini_set('display_errors', 1); // turn error reporting on
 // include the who's online functions
 $C['files_path'] = 'whos-online/';              // full path, always end with a slash
 //$C['files_url'] = 'http://localhost:8111/freshradiouk.com/whos-online/'; // url, always end with a slash
-$C['files_url'] = 'http://www.freshradiouk.com/whos-online/'; // url, always end with a slash
+$C['files_url'] = 'http://freshbackup.hol.es/whos-online/'; // url, always end with a slash
 
 require ($C['files_path'].'include-whos-online-header.php');
   $whos_online_records = update_whos_online();

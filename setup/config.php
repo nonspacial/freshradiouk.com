@@ -1,6 +1,6 @@
 <?php
 ## Setup Document#############################################################################################
-
+ob_start("ob_gzhandler");
 error_reporting(0);
 
 ## Includes
@@ -66,8 +66,8 @@ $user= data_user($dbc, $_SESSION['username']);
 
 // include the who's online functions
 $C['files_path'] = 'whos-online/';              // full path, always end with a slash
-//$C['files_url'] = 'http://localhost:8080/freshradiouk.com/whos-online/'; // url, always end with a slash
-$C['files_url'] = 'http://www.freshradiouk.com/whos-online/'; // url, always end with a slash
+//$C['files_url'] = 'http://localhost:8080/fresh%20live%20site.com/whos-online/'; // url, always end with a slash
+$C['files_url'] = ' http://www.freshbackup.hol.es/whos-online/'; // url, always end with a slash
 
 require ($C['files_path'].'include-whos-online-header.php');
   $whos_online_records = update_whos_online();

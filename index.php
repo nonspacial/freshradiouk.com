@@ -17,3 +17,4 @@
     </body>
 	<?php if ($debug==1) {?> <div id="debug"> <?php	include ("functions/debug.php");?> </div><?php }?>
 </html>
+<?php ob_flush(); ?>

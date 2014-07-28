@@ -56,4 +56,18 @@
 <file name="queries.php" server="www.freshradiouk.com/public_html/" local="130507204918773670" remote="130509880770000000" Dst="2" />
 <file name="sandbox.php" server="www.freshradiouk.com/public_html/" local="130507204918773670" remote="130509880770000000" Dst="2" />
 <file name="setup.php" server="www.freshradiouk.com/public_html/" local="130507204918783669" remote="130509880770000000" Dst="2" />
+<file name="connection.php" server="ftp.freshbackup.hol.es/public_html/" local="130509880272015333" remote="130509850800000000" Dst="2" />
+<file name="content.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918493670" remote="130509850800000000" Dst="2" />
+<file name="css.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918493670" remote="130509850800000000" Dst="2" />
+<file name="data.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918503663" remote="130509850800000000" Dst="2" />
+<file name="debug.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918513665" remote="130509851400000000" Dst="2" />
+<file name="image_upload.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918743669" remote="130509851400000000" Dst="2" />
+<file name="forms.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918733670" remote="130509851400000000" Dst="2" />
+<file name="js.php" server="ftp.freshbackup.hol.es/public_html/" local="130508077548126986" remote="130509851400000000" Dst="2" />
+<file name="nav.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918753666" remote="130509851400000000" Dst="2" />
+<file name="phoneVsdesktop.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918763668" remote="130509852000000000" Dst="2" />
+<file name="queries.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918773670" remote="130509852000000000" Dst="2" />
+<file name="sandbox.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918773670" remote="130509852000000000" Dst="2" />
+<file name="setup.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918783669" remote="130509852000000000" Dst="2" />
+<file name="file_upload.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204918723668" remote="130509852000000000" Dst="2" />
 </dwsync>

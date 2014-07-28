@@ -15,4 +15,9 @@
 <file name="homepage_oam.xml" server="ftp.freshbackup.hol.es//public_html/" local="130507204919793701" remote="130509576000000000" Dst="2" />
 <file name="homepage_edgeActions.js" server="ftp.freshbackup.hol.es//public_html/" local="130507204919763698" remote="130509585600000000" Dst="2" />
 <file name="homepage_edgePreload.js" server="ftp.freshbackup.hol.es//public_html/" local="130507204919783696" remote="130509585600000000" Dst="2" />
+<file name="homepage.html" server="www.freshradiouk.com/public_html/" local="130507204919593691" remote="130509880870000000" Dst="2" />
+<file name="homepage_edge.js" server="www.freshradiouk.com/public_html/" local="130507204919613692" remote="130509880870000000" Dst="2" />
+<file name="homepage_edgeActions.js" server="www.freshradiouk.com/public_html/" local="130507204919763698" remote="130509880870000000" Dst="2" />
+<file name="homepage_edgePreload.js" server="www.freshradiouk.com/public_html/" local="130507204919783696" remote="130509880870000000" Dst="2" />
+<file name="homepage_oam.xml" server="www.freshradiouk.com/public_html/" local="130507204919793701" remote="130509880870000000" Dst="2" />
 </dwsync>

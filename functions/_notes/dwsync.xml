@@ -12,4 +12,8 @@
 <file name="sandbox.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204920753725" remote="130509576000000000" Dst="2" />
 <file name="debug.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204920753725" remote="130509578400000000" Dst="2" />
 <file name="blog.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204920733724" remote="130509585600000000" Dst="2" />
+<file name="blog.php" server="www.freshradiouk.com/public_html/" local="130507204920733724" remote="130509881060000000" Dst="2" />
+<file name="data.php" server="www.freshradiouk.com/public_html/" local="130507204920743723" remote="130509881060000000" Dst="2" />
+<file name="debug.php" server="www.freshradiouk.com/public_html/" local="130507204920753725" remote="130509881060000000" Dst="2" />
+<file name="sandbox.php" server="www.freshradiouk.com/public_html/" local="130507204920753725" remote="130509881060000000" Dst="2" />
 </dwsync>

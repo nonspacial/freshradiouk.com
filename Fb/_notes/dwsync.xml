@@ -69,4 +69,27 @@
 <file name="GraphPage.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204917863648" remote="130509577200000000" Dst="2" />
 <file name="GraphSessionInfo.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204917873650" remote="130509577200000000" Dst="2" />
 <file name="FacebookCanvasLoginHelper.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204917733647" remote="130509585600000000" Dst="2" />
+<file name="FacebookAuthorizationException.php" server="www.freshradiouk.com/public_html/" local="130507204917733647" remote="130509880990000000" Dst="2" />
+<file name="FacebookCanvasLoginHelper.php" server="www.freshradiouk.com/public_html/" local="130507204917733647" remote="130509880990000000" Dst="2" />
+<file name="FacebookClientException.php" server="www.freshradiouk.com/public_html/" local="130507204917743646" remote="130509880990000000" Dst="2" />
+<file name="FacebookJavaScriptLoginHelper.php" server="www.freshradiouk.com/public_html/" local="130507204917753642" remote="130509880990000000" Dst="2" />
+<file name="FacebookOtherException.php" server="www.freshradiouk.com/public_html/" local="130507204917763641" remote="130509880990000000" Dst="2" />
+<file name="FacebookPageTabHelper.php" server="www.freshradiouk.com/public_html/" local="130507204917763641" remote="130509880990000000" Dst="2" />
+<file name="FacebookPermissionException.php" server="www.freshradiouk.com/public_html/" local="130507204917773643" remote="130509880990000000" Dst="2" />
+<file name="FacebookRedirectLoginHelper.php" server="www.freshradiouk.com/public_html/" local="130507204917783645" remote="130509880990000000" Dst="2" />
+<file name="FacebookRequest.php" server="www.freshradiouk.com/public_html/" local="130507204917783645" remote="130509880990000000" Dst="2" />
+<file name="FacebookRequestException.php" server="www.freshradiouk.com/public_html/" local="130507204917793645" remote="130509881000000000" Dst="2" />
+<file name="FacebookResponse.php" server="www.freshradiouk.com/public_html/" local="130507204917803647" remote="130509881000000000" Dst="2" />
+<file name="FacebookSDKException.php" server="www.freshradiouk.com/public_html/" local="130507204917803647" remote="130509881000000000" Dst="2" />
+<file name="FacebookServerException.php" server="www.freshradiouk.com/public_html/" local="130507204917813646" remote="130509881000000000" Dst="2" />
+<file name="FacebookSession.php" server="www.freshradiouk.com/public_html/" local="130507204917823648" remote="130509881000000000" Dst="2" />
+<file name="FacebookSignedRequestFromInputHelper.php" server="www.freshradiouk.com/public_html/" local="130507204917823648" remote="130509881000000000" Dst="2" />
+<file name="FacebookThrottleException.php" server="www.freshradiouk.com/public_html/" local="130507204917833647" remote="130509881000000000" Dst="2" />
+<file name="GraphAlbum.php" server="www.freshradiouk.com/public_html/" local="130507204917843649" remote="130509881000000000" Dst="2" />
+<file name="GraphLocation.php" server="www.freshradiouk.com/public_html/" local="130507204917853646" remote="130509881000000000" Dst="2" />
+<file name="GraphObject.php" server="www.freshradiouk.com/public_html/" local="130507204917853646" remote="130509881000000000" Dst="2" />
+<file name="GraphPage.php" server="www.freshradiouk.com/public_html/" local="130507204917863648" remote="130509881000000000" Dst="2" />
+<file name="GraphSessionInfo.php" server="www.freshradiouk.com/public_html/" local="130507204917873650" remote="130509881010000000" Dst="2" />
+<file name="GraphUser.php" server="www.freshradiouk.com/public_html/" local="130507204917883646" remote="130509881010000000" Dst="2" />
+<file name="GraphUserPage.php" server="www.freshradiouk.com/public_html/" local="130507204917883646" remote="130509881010000000" Dst="2" />
 </dwsync>

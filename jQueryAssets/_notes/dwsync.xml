@@ -15,4 +15,9 @@
 <file name="jquery-1.8.3.min.js" server="ftp.freshbackup.hol.es//public_html/" local="130507204921623751" remote="130509577200000000" Dst="2" />
 <file name="jquery.ui.core.min.css" server="ftp.freshbackup.hol.es//public_html/" local="130507204921673750" remote="130509577800000000" Dst="2" />
 <file name="jquery.ui.theme.min.css" server="ftp.freshbackup.hol.es//public_html/" local="130507204921683752" remote="130509578400000000" Dst="2" />
+<file name="jquery-1.8.3.min.js" server="www.freshradiouk.com/public_html/" local="130507204921623751" remote="130509881340000000" Dst="2" />
+<file name="jquery-ui-1.9.2.accordion.custom.min.js" server="www.freshradiouk.com/public_html/" local="130507204921653751" remote="130509881340000000" Dst="2" />
+<file name="jquery.ui.accordion.min.css" server="www.freshradiouk.com/public_html/" local="130507204921663753" remote="130509881350000000" Dst="2" />
+<file name="jquery.ui.core.min.css" server="www.freshradiouk.com/public_html/" local="130507204921673750" remote="130509881350000000" Dst="2" />
+<file name="jquery.ui.theme.min.css" server="www.freshradiouk.com/public_html/" local="130507204921683752" remote="130509881350000000" Dst="2" />
 </dwsync>

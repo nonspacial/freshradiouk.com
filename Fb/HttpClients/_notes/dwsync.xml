@@ -21,4 +21,11 @@
 <file name="FacebookGuzzleHttpClient.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204917913650" remote="130509577800000000" Dst="2" />
 <file name="FacebookStreamHttpClient.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204917933645" remote="130509577800000000" Dst="2" />
 <file name="fb_ca_chain_bundle.crt" server="ftp.freshbackup.hol.es//public_html/" local="130507204918013647" remote="130509577800000000" Dst="2" />
+<file name="FacebookCurl.php" server="www.freshradiouk.com/public_html/" local="130507204917893651" remote="130509881010000000" Dst="2" />
+<file name="FacebookCurlHttpClient.php" server="www.freshradiouk.com/public_html/" local="130507204917903650" remote="130509881010000000" Dst="2" />
+<file name="FacebookGuzzleHttpClient.php" server="www.freshradiouk.com/public_html/" local="130507204917913650" remote="130509881010000000" Dst="2" />
+<file name="FacebookHttpable.php" server="www.freshradiouk.com/public_html/" local="130507204917923649" remote="130509881010000000" Dst="2" />
+<file name="FacebookStream.php" server="www.freshradiouk.com/public_html/" local="130507204917933645" remote="130509881010000000" Dst="2" />
+<file name="FacebookStreamHttpClient.php" server="www.freshradiouk.com/public_html/" local="130507204917933645" remote="130509881010000000" Dst="2" />
+<file name="fb_ca_chain_bundle.crt" server="www.freshradiouk.com/public_html/" local="130507204918013647" remote="130509881040000000" Dst="2" />
 </dwsync>

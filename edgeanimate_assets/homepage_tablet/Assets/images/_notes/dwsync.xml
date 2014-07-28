@@ -24,4 +24,12 @@
 <file name="icon.png" server="ftp.freshbackup.hol.es//public_html/" local="130507204920463717" remote="130509585600000000" Dst="2" />
 <file name="tune.svg" server="ftp.freshbackup.hol.es//public_html/" local="130507204920483718" remote="130509585600000000" Dst="2" />
 <file name="html5chrome.png" server="ftp.freshbackup.hol.es//public_html/" local="130507204920443715" remote="130509585600000000" Dst="2" />
+<file name="html5chrome.png" server="www.freshradiouk.com/public_html/" local="130507204920443715" remote="130509880950000000" Dst="2" />
+<file name="html5firefox.png" server="www.freshradiouk.com/public_html/" local="130507204920453717" remote="130509880960000000" Dst="2" />
+<file name="html5IE.png" server="www.freshradiouk.com/public_html/" local="130507204920433716" remote="130509880970000000" Dst="2" />
+<file name="icon.png" server="www.freshradiouk.com/public_html/" local="130507204920463717" remote="130509880970000000" Dst="2" />
+<file name="p-left.svg" server="www.freshradiouk.com/public_html/" local="130507204920473716" remote="130509880970000000" Dst="2" />
+<file name="p-right.svg" server="www.freshradiouk.com/public_html/" local="130507204920483718" remote="130509880970000000" Dst="2" />
+<file name="Poster.png" server="www.freshradiouk.com/public_html/" local="130507204920423717" remote="130509880980000000" Dst="2" />
+<file name="tune.svg" server="www.freshradiouk.com/public_html/" local="130507204920483718" remote="130509880980000000" Dst="2" />
 </dwsync>

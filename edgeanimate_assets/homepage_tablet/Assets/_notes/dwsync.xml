@@ -15,4 +15,9 @@
 <file name="homepage_tablet_edgeActions.js" server="ftp.freshbackup.hol.es//public_html/" local="130507204920383714" remote="130509577800000000" Dst="2" />
 <file name="homepage_tablet_edgePreload.js" server="ftp.freshbackup.hol.es//public_html/" local="130507204920403716" remote="130509577800000000" Dst="2" />
 <file name="homepage_tablet_edge.js" server="ftp.freshbackup.hol.es//public_html/" local="130507204920363713" remote="130509585600000000" Dst="2" />
+<file name="homepage_tablet.html" server="www.freshradiouk.com/public_html/" local="130507204920163709" remote="130509880940000000" Dst="2" />
+<file name="homepage_tablet_edge.js" server="www.freshradiouk.com/public_html/" local="130507204920363713" remote="130509880940000000" Dst="2" />
+<file name="homepage_tablet_edgeActions.js" server="www.freshradiouk.com/public_html/" local="130507204920383714" remote="130509880940000000" Dst="2" />
+<file name="homepage_tablet_edgePreload.js" server="www.freshradiouk.com/public_html/" local="130507204920403716" remote="130509880940000000" Dst="2" />
+<file name="homepage_tablet_oam.xml" server="www.freshradiouk.com/public_html/" local="130507204920403716" remote="130509880940000000" Dst="2" />
 </dwsync>

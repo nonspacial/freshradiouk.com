@@ -39,4 +39,5 @@
 <file name="fixedGuest.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204918993675" remote="130509585600000000" Dst="2" />
 <file name="unload.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204919163679" remote="130509585600000000" Dst="2" />
 <file name="updateUser.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204919163679" remote="130509585600000000" Dst="2" />
+<file name="chatJSON.php" server="www.freshradiouk.com/public_html/" local="130509831318530292" remote="130509832060000000" Dst="2" />
 </dwsync>

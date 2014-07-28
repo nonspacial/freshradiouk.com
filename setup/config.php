@@ -34,7 +34,8 @@ $path = get_path();
 	if( strstr($_SERVER['HTTP_USER_AGENT'],'Android') ||
 			strstr($_SERVER['HTTP_USER_AGENT'],'webOS') ||
 			strstr($_SERVER['HTTP_USER_AGENT'],'iPhone') ||
-			strstr($_SERVER['HTTP_USER_AGENT'],'iPod')){
+			strstr($_SERVER['HTTP_USER_AGENT'],'iPod') ||
+			strstr($_SERVER['HTTP_USER_AGENT'],'iPad')){
 			// Mobile DO Nothing Paste @ bottom	
 			session_start();
 			$session_id = session_id();
@@ -66,8 +67,8 @@ $user= data_user($dbc, $_SESSION['username']);
 
 // include the who's online functions
 $C['files_path'] = 'whos-online/';              // full path, always end with a slash
-//$C['files_url'] = 'http://localhost:8080/fresh%20live%20site.com/whos-online/'; // url, always end with a slash
-$C['files_url'] = ' http://www.freshbackup.hol.es/whos-online/'; // url, always end with a slash
+$C['site_url'] = 'http://localhost:8080/Fresh%20Live%20Site/freshradiouk.com/whos-online/';
+//$C['files_url'] = ' http://www.freshbackup.hol.es/whos-online/'; // url, always end with a slash
 
 require ($C['files_path'].'include-whos-online-header.php');
   $whos_online_records = update_whos_online();

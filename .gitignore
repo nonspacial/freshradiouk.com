@@ -1,6 +1,6 @@
 #connection.php
 setup/connection.php
-
+admin/php/connection.php
 
 #error_log
 error_log

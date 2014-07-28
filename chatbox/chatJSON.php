@@ -3,9 +3,9 @@ include ("../setup/connection.php");
 
 $chat = $dbc->query("(SELECT * FROM chat ORDER BY id DESC LIMIT 50)ORDER BY id ASC"); 
 $data= array();
-while ($extract = mysqli_fetch_array($chat)) {
+while ($extract = mysqli_fetch_assoc($chat)) {
 	
-	$data[] = $extract;
+	$data[]['chats'] = $extract;
 }
 $fh = fopen("logs.json", 'w')
       or die("Error opening output file");

@@ -368,8 +368,8 @@ body{margin-bottom:80px;}
 	}
 #guestList{margin-top:0%;}
 .panelMain {
-	max-height: 450px;
-	height: 450px;
+	max-height: 550px;
+	height: 550px;
 	margin-bottom:10px !important;
 	}
 .panelFbook {
@@ -431,7 +431,7 @@ body{margin-bottom:80px;}
 	margin-left:5%;
 	font-size:.8em;
 	padding:0% 1%;
-	height:230px;
+	height:273px;
 	}
 .nowPlaying h3{font-size:17px;}
 .nowPlaying h4{font-size:14px;}
@@ -457,7 +457,7 @@ body{margin-bottom:80px;}
 	margin-left:auto !important;
 	margin-top:auto !important;
 	padding:0% 0%;
-	height:115px;
+	height:155px;
 	}
 .you {min-height:115px;}
 .you h4 {font-size:16px;}
@@ -473,7 +473,7 @@ body{margin-bottom:80px;}
 .onlineGuests h4 {font-size:16px;}
 .streamLinks{
 	margin-bottom:0 !important;
-	min-height:100px;
+	min-height:150px;
 	}
 #online {
 	margin-top:0%;
@@ -486,7 +486,7 @@ body{margin-bottom:80px;}
 	margin:0% 1% 1% 1%;}
 #sidebar {
 	padding: 0%;
-	height: 500px;
+	height: 550px;
 	}
 #sidebarFbook {
 	padding: 0%;

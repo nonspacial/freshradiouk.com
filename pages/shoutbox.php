@@ -1,7 +1,6 @@
 			<div id="chatInner" class="row" style="clear:both">
-                    <div id="pageLoad" style="text-align:center"><h4 style="color:#CDCDCD">The Site is still in the Beta testing stage so please bare with us. New Guest List button added.</h4></div>
-                            
-                    <div id="imageLoad" style="display:none;"><img src="images/1-0.gif" /></div>
+<!--<div id="pageLoad" style="text-align:center"><h4 style="color:#CDCDCD">The Site is still in the Beta testing stage so please bare with us. New Guest List button added.</h4></div>-->                            
+<!--                    <div id="imageLoad" style="display:none;"><img src="images/1-0.gif" /></div>-->
                     <div id="online" class="col-md-2 panel panel-default panelMain"><div id="onlineUsers"></div></div>
                     <div class="col-md-7">
                         <div id="chatlogs" class="col-md-12 panel panel-default panelMain" style="margin:0;">LOADING CHATLOG PLEASE WAIT... <img src="images/1-0.gif" /></div>
@@ -79,7 +78,22 @@
                     </div>
                     </div>
 <script>
-	setTimeout (function () { var elem = document.getElementById('chatlogs'); elem.scrollTop = elem.scrollHeight; }, 4000);
+function submitChat() {
+    if (form1.uName.value === '' || form1.msg.value === '') {
+        alert('ALL Fields ARE MANDATORY!');
+        return;
+    }
+    form1.uName.style.border = 'none';
+    var uName = form1.uName.value;
+    var uNameEscaped = encode(uName);
+    var msg = form1.msg.value;
+    var msgEscaped = encode(msg);
+    $('.you p').html(form1.uName.value);
+    $.ajax({ url: "chatbox/insert.php?uName=" + uNameEscaped + "&msg=" + msgEscaped });
+	$('#message').val('');
+    var elem = document.getElementById('chatlogs');
+    elem.scrollTop = elem.scrollHeight;
+}	setTimeout (function () { var elem = document.getElementById('chatlogs'); elem.scrollTop = elem.scrollHeight; }, 4000);
 	$('#message').focus();
 	$('.emoticonButton').on('click', function (e) { var smiley = $(this).attr('alt'); var message = $('#message').val(); $('#message').val(message + ' ' + smiley + '').focus();});
 	$('.slide').on("click", function () {

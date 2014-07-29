@@ -67,7 +67,7 @@ $user= data_user($dbc, $_SESSION['username']);
 
 // include the who's online functions
 $C['files_path'] = 'whos-online/';              // full path, always end with a slash
-$C['site_url'] = 'http://localhost:8080/Fresh%20Live%20Site/freshradiouk.com/whos-online/';
+$C['site_url'] = 'http://localhost:8080/freshradiouk.com/whos-online/';
 //$C['files_url'] = ' http://www.freshbackup.hol.es/whos-online/'; // url, always end with a slash
 
 require ($C['files_path'].'include-whos-online-header.php');

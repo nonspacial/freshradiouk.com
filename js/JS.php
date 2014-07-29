@@ -30,8 +30,6 @@
 			function updatePlaying() {$.ajax({url:"setup/nowPlaying.php", type: 'GET', success: function(data){$('#nowPlaying').html(data);}});}
 			function active() {$.ajax({url:"chatbox/active.php", type: 'GET', success: function(data){$('.loggedInUsers p').html(data);}});}
 			function guests() {$.ajax({url:"chatbox/guests.php", type: 'GET', success: function(data){$('.onlineGuests p').html(data);}});}
-			function submitChat() {if (form1.uName.value === '' || form1.msg.value === '') {alert('ALL Fields ARE MANDATORY!'); return;}
-			form1.uName.style.border = 'none'; $('#imageLoad').show(); var uName = form1.uName.value; var uNameEscaped = encode(uName); var msg = form1.msg.value; var msgEscaped = encode(msg);$('.you p').html(form1.uName.value);$.ajax({ url: "chatbox/insert.php?uName=" + uNameEscaped + "&msg=" + msgEscaped, success: function (data) { $('#chatlogs').html(data); $('#imageLoad').hide(); $('#message').val('');}});$.ajax({ url: "chatbox/chatJSON.php", type: "GET" });var elem = document.getElementById('chatlogs'); elem.scrollTop = elem.scrollHeight;}
 			function updateUsers() {$.ajax({ url: "chatbox/updateUser.php", type: "GET" });}
 			function insertUser(){var uName = form1.uName.value;uNameEscaped = encode(uName);$.ajax({ url: "chatbox/insertUser.php?uName=" + uNameEscaped, type: "GET" });}
 		$('#console-debug').hide();	

@@ -1,8 +1,8 @@
 <?php 
 
 //Connection to DB
-//$dbc = new mysqli("localhost", "root", "spiral33", "fresh");
-$dbc = new mysqli("localhost", "u506783747_fresh", "wEG?#7B@g;", "u506783747_fresh");
+$dbc = new mysqli("localhost", "root", "spiral33", "fresh");
+//$dbc = new mysqli("localhost", "u506783747_fresh", "wEG?#7B@g;", "u506783747_fresh");
 
 if ($dbc->connect_errno) {
     echo "Failed to connect to MySQL: (" . $dbc->connect_errno . ") " . $dbc->connect_error;

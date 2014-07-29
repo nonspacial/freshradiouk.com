@@ -48,4 +48,6 @@
 <file name="register_success.php" server="www.freshradiouk.com/public_html/" local="130507204922133765" remote="130509881440000000" Dst="2" />
 <file name="twitter.php" server="www.freshradiouk.com/public_html/" local="130507204922143764" remote="130509881440000000" Dst="2" />
 <file name="visitors.php" server="www.freshradiouk.com/public_html/" local="130507204922153763" remote="130509881440000000" Dst="2" />
+<file name="pages.php" server="ftp.freshbackup2.hol.es//public_html/" local="130508267284574263" remote="130510653000000000" Dst="2" />
+<file name="shoutbox.php" server="ftp.freshbackup2.hol.es//public_html/" local="130510679739736586" remote="130510653000000000" Dst="2" />
 </dwsync>

@@ -1,9 +1,9 @@
 <?php
+ob_start("ob_gzhandler");
 include ("../setup/connection.php");
-
 $chatJson = file_get_contents('logs.json');
 $chat = json_decode($chatJson, true);
-header('Content-Type: application/json');
+//header('Content-Type: application/json');
 
 foreach($chat as $chatEcho){
 	$userColour = $dbc->query("SELECT * FROM users WHERE username ='".$chatEcho['chats']['username']."'");
@@ -29,4 +29,5 @@ foreach($chat as $chatEcho){
 ?>
 <br />
 <?php 
+ ob_flush();
 ?>

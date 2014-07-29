@@ -32,4 +32,12 @@
 <file name="logout.php" server="www.freshradiouk.com/public_html/" local="130507204922193766" remote="130509881450000000" Dst="2" />
 <file name="phoneVsdesktop.php" server="www.freshradiouk.com/public_html/" local="130507204922203765" remote="130509881450000000" Dst="2" />
 <file name="queries.php" server="www.freshradiouk.com/public_html/" local="130507204922213767" remote="130509881450000000" Dst="2" />
+<file name="config.php" server="ftp.freshbackup2.hol.es//public_html/" local="130510679739746585" remote="130510653000000000" Dst="2" />
+<file name="file_upload.php" server="ftp.freshbackup2.hol.es//public_html/" local="130508176921839486" remote="130510653000000000" Dst="2" />
+<file name="image_upload.php" server="ftp.freshbackup2.hol.es//public_html/" local="130508191728167405" remote="130510653000000000" Dst="2" />
+<file name="logout.php" server="ftp.freshbackup2.hol.es//public_html/" local="130510679739766587" remote="130510653000000000" Dst="2" />
+<file name="nowPlaying.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507204922193766" remote="130510653000000000" Dst="2" />
+<file name="queries.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507204922213767" remote="130510653000000000" Dst="2" />
+<file name="connection.php" server="ftp.freshbackup2.hol.es//public_html/" local="130510690629773974" remote="130510654200000000" Dst="2" />
+<file name="phoneVsdesktop.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507204922203765" remote="130510653000000000" Dst="2" />
 </dwsync>

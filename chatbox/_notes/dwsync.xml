@@ -39,7 +39,6 @@
 <file name="fixedGuest.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204918993675" remote="130509585600000000" Dst="2" />
 <file name="unload.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204919163679" remote="130509585600000000" Dst="2" />
 <file name="updateUser.php" server="ftp.freshbackup.hol.es//public_html/" local="130507204919163679" remote="130509585600000000" Dst="2" />
-<<<<<<< HEAD
 <file name="chatJSON.php" server="www.freshradiouk.com/public_html/" local="130509880272045334" remote="130509880790000000" Dst="2" />
 <file name="active.php" server="www.freshradiouk.com/public_html/" local="130507275300365414" remote="130509880790000000" Dst="2" />
 <file name="activeUsers.php" server="www.freshradiouk.com/public_html/" local="130507915717621950" remote="130509880790000000" Dst="2" />
@@ -66,7 +65,18 @@
 <file name="smilieParse.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204919153680" remote="130509852000000000" Dst="2" />
 <file name="unload.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204919163679" remote="130509852000000000" Dst="2" />
 <file name="updateUser.php" server="ftp.freshbackup.hol.es/public_html/" local="130507204919163679" remote="130509852000000000" Dst="2" />
-=======
-<file name="chatJSON.php" server="www.freshradiouk.com/public_html/" local="130509831318530292" remote="130509832060000000" Dst="2" />
->>>>>>> origin/convert-JSON
+<file name="activeUsers.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507915717621950" remote="130510653000000000" Dst="2" />
+<file name="active.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507275300365414" remote="130510653000000000" Dst="2" />
+<file name="fixedUser.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507204919123679" remote="130510653000000000" Dst="2" />
+<file name="guests.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507275300385418" remote="130510653000000000" Dst="2" />
+<file name="insert.php" server="ftp.freshbackup2.hol.es//public_html/" local="130510712364547459" remote="130510676400000000" Dst="2" />
+<file name="insertUser.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507204919143681" remote="130510653000000000" Dst="2" />
+<file name="logs.json" server="ftp.freshbackup2.hol.es//public_html/" local="130510678435779777" remote="130510653000000000" Dst="2" />
+<file name="logs.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507204919143681" remote="130510653000000000" Dst="2" />
+<file name="smilieParse.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507204919153680" remote="130510653000000000" Dst="2" />
+<file name="unload.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507204919163679" remote="130510653000000000" Dst="2" />
+<file name="chatJSON.php" server="ftp.freshbackup2.hol.es//public_html/" local="130510679739626580" remote="130510653000000000" Dst="2" />
+<file name="fixedGuest.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507204918993675" remote="130510653000000000" Dst="2" />
+<file name="jsonDecode.php" server="ftp.freshbackup2.hol.es//public_html/" local="130510712535162272" remote="130510676400000000" Dst="2" />
+<file name="updateUser.php" server="ftp.freshbackup2.hol.es//public_html/" local="130507204919163679" remote="130510653000000000" Dst="2" />
 </dwsync>
